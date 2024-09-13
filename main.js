@@ -10,6 +10,16 @@ window.addEventListener("scroll", () => {
 })
 
 
+window.addEventListener("scroll", () => {
+    let header = document.querySelector(".header-bottom")
+    if (window.scrollY > 200) {
+        header.classList.add("headerMiniMenuAction")
+    } else {
+        header.classList.remove("headerMiniMenuAction")
+    }
+})
+
+
 // section3
 
 let valueDisplays = document.querySelectorAll(".animated-first")
@@ -48,10 +58,10 @@ searchOverlay.addEventListener('click', function (e) {
 
 //choose language
 
-document.getElementById('lang').addEventListener('click', () => {
-console.log("clicked");
+// document.getElementById('lang').addEventListener('click', () => {
+// console.log("clicked");
 
-})
+// })
 
 
 
@@ -65,10 +75,17 @@ window.addEventListener('load', () => {
 
 
 
-document.getElementById('langBtn').addEventListener('click', function() {
-    const dropdown = document.getElementById('dropdownMenu');
-    dropdown.classList.toggle('show');
-});
+// document.getElementById('langBtn').addEventListener('click', function() {
+//     const dropdown = document.getElementById('dropdownMenu');
+//     dropdown.classList.toggle('show');
+// });
 
 
+
+
+
+document.getElementById('menu').addEventListener('click',() => {
+    let menu = document.querySelector(".header-bottom-content");
+    menu.classList.toggle("showMenu")
+})
 
