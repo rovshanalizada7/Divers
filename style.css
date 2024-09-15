@@ -1162,6 +1162,12 @@ img {
         padding: 10px 30px;
         font-size: 13px;
     }
+    .section2{
+        background-image: none;
+    }
+    .section2-content{
+        justify-content: center;
+    }
 
     .part-container {
         display: flex;
@@ -1195,6 +1201,7 @@ img {
     .content-left,
     .content-right {
         width: 290px !important;
+        margin-top: 1.7rem;
     }
 
     .left-top img {
